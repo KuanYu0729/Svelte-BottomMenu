@@ -20,7 +20,8 @@
     "svelte-preprocess-less": "^0.4.0"
   },
   "keywords": [
-    "svelte"
+    "svelte",
+    "bottom-menu"
   ],
   "files": [
     "src",
