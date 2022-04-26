@@ -1,5 +1,6 @@
 {
   "name": "@kuanyu/bottom-menu",
+  "version": "1.0.0",
   "svelte": "src/index.js",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
