@@ -1,37 +1,37 @@
-*Psst — looking for a more complete solution? Check out [SvelteKit](https://kit.svelte.dev) and its [package command](https://kit.svelte.dev/docs#packaging) which gives you more built-in features like TypeScript transpilation, type definition generation and a built-in playground to test your library.*
+## Svelte bottom menu
 
-*Looking for an app template instead? Go here --> [sveltejs/template](https://github.com/sveltejs/template)*
+## Usage
 
----
+This library is using typescript.
 
-# component-template
+### How to use
 
-A base for building shareable Svelte components. Clone it with [degit](https://github.com/Rich-Harris/degit):
+The [simplest possible demo](https://svelte.dev/repl/3deb2b7a5b8c45e990e6e3b37005881c?version=3.47.0)
+
+### Installation
 
 ```bash
-npx degit sveltejs/component-template my-new-component
-cd my-new-component
-npm install # or yarn
+npm i -D svelte-bottom-menu
 ```
 
-Your component's source code lives in `src/Component.svelte`.
+## Usage
 
-You can create a package that exports multiple components by adding them to the `src` directory and editing `src/index.js` to reexport them as named exports.
+```jsx
 
-TODO
-
-* [ ] some firm opinions about the best way to test components
-* [ ] update `degit` so that it automates some of the setup work
-
-
-## Setting up
-
-* Run `npm init` (or `yarn init`)
-* Replace this README with your own
-
-
-## Consuming components
-
-Your package.json has a `"svelte"` field pointing to `src/index.js`, which allows Svelte apps to import the source code directly, if they are using a bundler plugin like [rollup-plugin-svelte](https://github.com/sveltejs/rollup-plugin-svelte) or [svelte-loader](https://github.com/sveltejs/svelte-loader) (where [`resolve.mainFields`](https://webpack.js.org/configuration/resolve/#resolve-mainfields) in your webpack config includes `"svelte"`). **This is recommended.**
-
-For everyone else, `npm run build` will bundle your component's source code into a plain JavaScript module (`dist/index.mjs`) and a UMD script (`dist/index.js`). This will happen automatically when you publish your component to npm, courtesy of the `prepublishOnly` hook in package.json.
+<script>
+  import BottomMenu from "svelte-bottom-menu";
+	let active = false;
+</script>
+<div>
+  <button on:click={()=> active = true}>
+    active
+  </button>
+  <BottomMenu bind:active>
+    <div class="menu-content">
+      <h5>
+      Hello world!
+      </h5>
+    </div>
+  </BottomMenu>
+</div>
+```
