@@ -1,5 +1,5 @@
 {
-  "name": "@kuanyu/bottom-menu",
+  "name": "svelte-bottom-menu",
   "version": "1.0.0",
   "svelte": "src/index.js",
   "module": "dist/index.mjs",
@@ -7,9 +7,6 @@
   "scripts": {
     "build": "rollup -c",
     "prepublishOnly": "npm run build"
-  },
-  "publishConfig": {
-    "registry":"https://npm.pkg.github.com"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^9.0.0",
