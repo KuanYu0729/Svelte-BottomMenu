@@ -1,5 +1,5 @@
 {
-  "name": "SvelteComponent",
+  "name": "@kuanyu/bottom-menu",
   "svelte": "src/index.js",
   "module": "dist/index.mjs",
   "main": "dist/index.js",
@@ -9,9 +9,14 @@
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^9.0.0",
+    "@rollup/plugin-typescript": "^8.3.2",
+    "@tsconfig/svelte": "^3.0.0",
+    "less": "^4.1.2",
     "rollup": "^2.0.0",
+    "rollup-plugin-css-only": "^3.1.0",
     "rollup-plugin-svelte": "^7.0.0",
-    "svelte": "^3.5.0"
+    "svelte": "^3.5.0",
+    "svelte-preprocess-less": "^0.4.0"
   },
   "keywords": [
     "svelte"
